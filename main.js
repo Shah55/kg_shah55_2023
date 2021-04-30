@@ -1,5 +1,5 @@
 const arrayOfNumbers = process.argv.slice(2)
-const lastItem = arrayOfNumbers[arrayOfNumbers.length - 1]
+const lastUnit = arrayOfNumbers[arrayOfNumbers.length - 1]
 let finalNumber = ''
  
 for (number in arrayOfNumbers) {
@@ -41,7 +41,7 @@ for (number in arrayOfNumbers) {
         }
     }
  
-    finalNumber = finalNumber + numberStringified + (arrayOfNumbers[number] === lastItem ? '' : ',')
+    finalNumber = finalNumber + numberStringified + (arrayOfNumbers[number] === lastUnit ? '' : ',')
 }
  
 console.log(finalNumber)
